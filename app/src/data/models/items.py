@@ -10,7 +10,7 @@ from sqlalchemy import (
     String
 )
 
-from data.models.base import Base
+from app.data.models.base import Base
 
 
 class ItemORM(Base):

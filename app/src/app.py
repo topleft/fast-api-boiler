@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 import uvicorn
 
-from repositories.db_repository import PsqlDbRepository
-from data.models.items import ItemORM
+from app.repositories.db_repository import PsqlDbRepository
+from app.data.models.items import ItemORM
 
 app = FastAPI()
 

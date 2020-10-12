@@ -8,9 +8,6 @@ done
 
 echo "PostgreSQL started"
 
-ls -la
-ls -la app
-
 uvicorn \
   --host ${HOST} \
   --port ${PORT} \
