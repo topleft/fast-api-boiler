@@ -3,16 +3,16 @@ version: '3'
 services:
   app:
     build:
-      context: ./app
+      context: ./project/app
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
     volumes:
-      - './app/src:/usr/src/app'
+      - './project/app/src:/usr/app/src'
     depends_on:
       - db
   db:
-    build: ./db/.
+    build: ./project/db/.
     ports:
       - "5433:5432"
     environment:
