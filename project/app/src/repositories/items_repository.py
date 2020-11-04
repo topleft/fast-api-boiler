@@ -1,4 +1,4 @@
-from app.src.data.models.items import ItemORM, CreateItem
+from app.src.data.models.items import ItemORM, ItemSchema__Create
 from sqlalchemy.orm import Session
 
 
@@ -13,10 +13,8 @@ class ItemsRepository():
     def get_all(self):
         return self.db.query(ItemORM).all()
 
-    def add(self, item_data: CreateItem):
+    def add(self, item_data: ItemSchema__Create):
         item = ItemORM(name=item_data.name)
         self.db.add(item)
         self.db.commit()
         return item
-
-
