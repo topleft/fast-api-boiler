@@ -13,4 +13,4 @@ uvicorn \
   --port ${PORT} \
   --workers 1 \
   --reload \
-  app.src:app
+  app.src.main:app
