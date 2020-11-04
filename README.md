@@ -23,3 +23,8 @@ $ cd project/db && sh scripts/migrate_db.sh
 $ cd project/db && sh scripts/upgrade_db.sh
 ```
 
+**Test:**
+```sh
+$ docker-compose exec app pytest ./app
+```
+
