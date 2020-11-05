@@ -31,3 +31,8 @@ $ docker-compose exec app python -m pytest /usr/app -p no:warnings --cov=/usr/ap
 $ docker-compose exec app flake8 --max-line-length 120 --inline-quotes=\" ./app/.
 ```
 
+
+**Todo:**
+
+- Configure Production build
+- Integrate with circleCI
