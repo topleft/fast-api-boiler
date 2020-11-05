@@ -4,11 +4,11 @@ services:
   app:
     build:
       context: ./project/app
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.local
     ports:
       - "8000:8000"
     volumes:
-      - './project/app/src:/usr/app/src'
+      - './project/app:/usr/app'
     depends_on:
       - db
   db:

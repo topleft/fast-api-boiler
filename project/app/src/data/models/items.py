@@ -34,11 +34,11 @@ class ItemORM(Base):
         return item
 
 
-class CreateItem(BaseModel):
+class ItemSchema__Create(BaseModel):
     name: str
 
 
-class Item(BaseModel):
+class ItemSchema(BaseModel):
     id: uuid.UUID
     created_at: datetime.date
     updated_at: datetime.date
